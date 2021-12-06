@@ -1,0 +1,333 @@
+.iphone_hd {
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #e33233;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.body {
+    background:#f8f8f8;
+}
+
+.iphone_bd .icomoon {
+    font-family: 'icomoon';
+    position: absolute;
+    font-size: 28px;
+    top: 4px;
+    left: 160px;
+}
+
+.iphone_bd {
+    position: relative;
+}
+
+.iphone_bd h4 {
+    font-size: 14px;
+    color: #343639;
+    font-weight: 400;
+}
+
+.iphone_bd ul li {
+    position: relative;
+    float: left;
+    width: 58px;
+}
+
+.iphone_bd ul li span {
+    margin: 0 7px 0 30px;
+}
+
+.mg {
+    margin-top: 10px;
+}
+
+.iphone_bd {
+    width: 190px;
+    height: 100px;
+    padding: 16px 6px;
+    border-bottom: 1px solid #ccc;
+}
+
+.iphone_bd ul {
+    margin-top: 5px;
+}
+
+.iphone_bd ul i {
+    display: inline-block;
+    position: absolute;
+    top:5px;
+    right: 10px;
+    width: 1px;
+    height: 10px;
+    background-color:#ccc;
+}
+
+.imp i{
+    right: 6px !important;
+}
+
+.margin{
+    margin-right: 4px;
+}
+
+.imp .margin_i {
+    right: -2px !important;
+}
+
+.impo ul li {
+    margin-right: 15px;
+}
+
+.impo ul li i {
+    right: -7px;
+}
+
+.cse {
+    width: 190px;
+}
+
+.cse img{
+    width: 100%;
+}
+
+.iphone_nav {
+    width: 991px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.iphone_nav ul li {
+    float: left;
+}
+
+.iphone_ul {
+    position: relative;
+    background-color: #fff;
+}
+
+.iphone_nav ul li i{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    width: 1px;
+    height: 10px;
+    background-color:#ccc;
+}
+
+.iphone_nav ul li {
+    position: relative;
+    padding: 0 50px;
+}
+
+.current {
+    color: rgb(40, 120, 230);
+}
+
+.focus {
+    position: absolute;
+    top: 45px;
+    left: 200px;
+    width: 990px;
+    height: 466px;
+}
+
+a:hover {
+    color: red !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #666 !important;
+}
+
+.tab_right_bd ul li {
+    position: relative;
+    float: left;
+    font-size: 14px;
+    height: 50px;
+    width: 247.5px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.tab_right_bd ul li i {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    width: 1px;
+    height: 10px;
+    background-color:#ccc;
+}
+
+.tab_left {
+    width: 200px;
+    height: 316px;
+}
+
+.tab_left img{
+    height: 100%;
+}
+
+.tab {
+    position: relative;
+}
+
+.tab_right_bd {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+
+.goods_items {
+    float: left;
+    width: 190px;
+    height: 264.4px;
+    padding:15px;
+    border-right: 10px solid #f8f8f8;
+}
+
+.goods_items img {
+    width: 160px;
+    height: 160px;
+}
+
+.goods_items span {
+    color: #f02b2b;
+    font-size: 16px;
+}
+
+.goods_items p {
+    font-size: 14px;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.tab_right_bd_items {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 990px;
+    height: 264.4px;
+}
+
+.tab_right_bd ul li a:hover {
+    color: rgb(40, 120, 230) !important;
+}
+
+.currents {
+    color: rgb(40, 120, 230) !important;
+    border-bottom: 3px solid rgb(40, 120, 230);
+}
+
+.tab_right_bd_items {
+    display: none;
+}
+
+.phone_banner img {
+    width: 230px;
+    height: 320px;
+}
+
+.phone_banner {
+    margin-top: 10px;
+}
+
+.like_hd {
+    text-align: center;
+}
+
+.like .goods_items {
+    border: none;
+}
+
+table {
+    width: 500px;
+    height: 500px;
+}
+th {
+    height: 35px;
+}
+table,
+td, th {
+    border: 1px solid #b61522;
+    /* 合并相邻的边框 */
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn1 {
+
+    width: 100%;
+  
+    height: 40px;
+  
+  
+    background: -webkit-linear-gradient(left,#b61522,#bb1a5d,#8e11a7);
+  
+    overflow: hidden;
+  
+    position: relative;
+  
+    margin: -11px auto;
+    right: 0px;
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+  }
+  
+  .btn1::before {
+  
+    content: "";
+  
+    display: block;
+  
+    width: 25px;
+  
+    height: 50px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  
+    transform: skewX(-25deg);
+  
+    position: absolute;
+  
+    left: -35px;
+  
+    animation: guang infinite 0.8s ease-in;
+  
+  }
+  
+  @keyframes guang {
+  
+    50% {
+  
+      left: -45px;
+  
+    }
+  
+    100% {
+  
+      left: 110px;
+  
+    }
+  
+  }

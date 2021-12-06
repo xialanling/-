@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家电频道页</title>
+    <!-- 引入facicon.ico网页图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 引入css 初始化的css 文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共样式的css 文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .hda .red_nav {
+        width: 230px;
+        height: 40px;
+        background-color: #e33233;
+        color: #fff;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 0;
+    }
+
+    a:hover {
+        color: red !important;
+    }
+
+
+    .hda ul li {
+        width: 230px;
+        padding: 13px 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .h_nav a {
+        font-size: 14px;
+        color: #000;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: #666 !important;
+    }
+
+    .b_nav a {
+        font-size: 12px;
+        color: #000;
+    }
+
+    .b_nav span {
+        margin-right: 8px;
+    }
+
+    .h_nav b {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(images/dianshi.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+
+    .hda_nav {
+        position: absolute;
+        top: 15px;
+        left: 260px;
+    }
+
+    .hda_nav ul li {
+        float: left;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .h_one b {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(images/shenghuo.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+
+    .h_two b {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(images/bingxiang.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+
+    .h_three b {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(images/kongtiao.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+
+    .h_four b {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(images/chuwei.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+
+    .h_five b {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(images/chufang.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+
+    .h_sex b {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(images/gehu.png) no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+
+    .hda ul li:last-child {
+        border: none;
+    }
+
+    .focus {
+        position: absolute;
+        top: 40px;
+        left: 240px;
+        width: 950px;
+        height: 355px;
+        background-color: pink;
+    }
+
+    /* .carousel,
+    .carousel img {
+        height: 355px !important;
+    } */
+
+    .b_banner {
+        position: absolute;
+        top: 395px;
+        right: 9px;
+        width: 951px;
+        height: 125px;
+    }
+
+    .b_banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .like_hd {
+        text-align: center;
+    }
+
+    .goods_items {
+        float: left;
+        width: 230px;
+        height: 275px;
+        padding: 20px 35px;
+        margin: 0 0 0 10px;
+    }
+
+    .goods_items img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .goods_items span {
+        color: #f02b2b;
+        font-size: 16px;
+    }
+
+    .goods_items p {
+        font-size: 14px;
+        color: #000;
+    }
+</style>
+
+<body>
+    <!-- 顶部快捷导航start -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您！ </li>
+                    <li>
+                        <a href="login.html">请登录</a>
+                        <a href="register.html" class="style-red" style="color: #e33233 !important;">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="spacer"></li>
+                    <li>
+                        <a href="#">我的品优购</a>
+                        <i class="icomoon"></i>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="#">品优购会员</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">企业采购</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">关注品优购</a> <i class="icomoon"></i></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">客户服务</a> <i class="icomoon"></i></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">网站导航</a> <i class="icomoon"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部快捷导航end  -->
+    <!-- header制作 -->
+    <div class="header w">
+        <!-- logo -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="品优购">品优购</a>
+            </h1>
+        </div>
+        <!-- search -->
+        <div class="search">
+            <input type="text" class="text" value="请搜索内容...">
+            <button class="btn">搜索</button>
+        </div>
+        <!-- hotwrods -->
+        <div class="hotwrods">
+            <a href="#" class="style-red" style="color: red !important;">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">美满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <div class="shopcar">
+            <i class="car"> </i><a href="settlement.html">我的购物车</a> <i class="arrow">  </i>
+            <i class="count">0</i>
+        </div>
+    </div>
+    <!-- header 结束 -->
+    <nav class="w">
+        <div class="hda">
+            <ul>
+                <li class="red_nav">家用电器</li>
+                <li>
+                    <div class="h_nav">
+                        <b></b>
+                        <a href="javascript:;">电视</a>
+                    </div>
+                    <div class="b_nav">
+                        <a href="javascript:;">平板电视</a>
+                        <span>|</span>
+                        <a href="javascript:;">家庭影音</a>
+                        <span>|</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="h_nav h_two">
+                        <b></b>
+                        <a href="javascript:;">冰箱洗衣机</a>
+                    </div>
+                    <div class="b_nav">
+                        <a href="javascript:;">对开门</a>
+                        <span>|</span>
+                        <a href="javascript:;">洗烘一体</a>
+                        <span>|</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="h_nav h_three">
+                        <b></b>
+                        <a href="javascript:;">空调</a>
+                    </div>
+                    <div class="b_nav">
+                        <a href="javascript:;">壁挂式</a>
+                        <span>|</span>
+                        <a href="javascript:;">立柜式</a>
+                        <span>|</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="h_nav h_four">
+                        <b></b>
+                        <a href="javascript:;">厨卫电器</a>
+                    </div>
+                    <div class="b_nav">
+                        <a href="javascript:;">烟灶</a>
+                        <span>|</span>
+                        <a href="javascript:;">热水器</a>
+                        <span>|</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="h_nav h_five">
+                        <b></b>
+                        <a href="javascript:;">厨房小电</a>
+                    </div>
+                    <div class="b_nav">
+                        <a href="javascript:;">电饭煲</a>
+                        <span>|</span>
+                        <a href="javascript:;">电烤箱</a>
+                        <span>|</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="h_nav h_one">
+                        <b></b>
+                        <a href="javascript:;">生活电器</a>
+                    </div>
+                    <div class="b_nav">
+                        <a href="javascript:;">吸尘器</a>
+                        <span>|</span>
+                        <a href="javascript:;">净化除醛</a>
+                        <span>|</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="h_nav h_sex">
+                        <b></b>
+                        <a href="javascript:;">个护健康</a>
+                    </div>
+                    <div class="b_nav">
+                        <a href="javascript:;">电动剃...</a>
+                        <span>|</span>
+                        <a href="javascript:;">电吹风机</a>
+                        <span>|</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hda_nav">
+            <ul>
+                <li><a href="javascript:;">智能生活</a>
+                    <span style="margin: 0 12px;">|</span>
+                </li>
+                <li>
+                    <a href="javascript:;">以旧换新</a>
+                    <span style="margin: 0 12px;">|</span>
+                </li>
+                <li><a href="javascript:;">企业购</a>
+                    <span style="margin: 0 12px;">|</span>
+                </li>
+                <li><a href="javascript:;">品优购金融</a></li>
+            </ul>
+        </div>
+        <div class="focus">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="upload/kongtiaobaox.png" alt="...">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="upload/nianzhongji.png" alt="...">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="upload/dianshi.png" alt="...">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="upload/jiadian.png" alt="...">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="upload/jiadianbutie.png" alt="...">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="b_banner">
+            <img src="upload/jinglingtu.png" alt="">
+        </div>
+    </nav>
+    <div class="like w clearfix">
+        <div class="like_hd">
+            <h3>猜你喜欢</h3>
+            <h5>优质商品。智能选择</h5>
+        </div>
+        <div class="goods_items">
+            <a href="jiadian.html">
+                <img src="upload/like1.png" alt="" style="width: 160px; height: 160px;">
+                <p>海尔(Haier)595升星蕴旗舰变频风冷无霜对开门...</p>
+                <span>￥5899.00</span>
+            </a>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like2.png" alt="" style="width: 160px; height: 160px;">
+            <p>海信（Hisense）75E3F 75英寸 4K...</p>
+            <span>￥5199.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like3.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔（Haier）549升双变频风冷无霜多门冰箱干...</p>
+            <span>￥5999.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like4.png" alt="" style="width: 160px; height: 160px;">
+            <p>海信（Hisense）55E3F-PRO 55英寸 4K HDR智...</p>
+            <span>￥2399.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like5.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔（Haier）545升风冷无霜双变频十字门冰箱...</p>
+            <span>￥4999.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like6.png" alt="" style="width: 160px; height: 160px;">
+            <p>亿田（entive）D2ZK 集成灶蒸烤一体侧吸抽油烟...</p>
+            <span>￥13800.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like7.png" alt="" style="width: 160px; height: 160px;">
+            <p>石头（roborock）扫地机器人T7S Plus 扫拖一体...</p>
+            <span>￥2899.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like8.png" alt="" style="width: 160px; height: 160px;">
+            <p>西门子（SIEMENS）蒸烤箱一体机嵌入式 智能蒸...</p>
+            <span>￥7999.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like9.png" alt="" style="width: 160px; height: 160px;">
+            <p>格力（GREE）空调 京东小家智能生态 3匹 云逸-...</p>
+            <span>￥7599.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like10.png" alt="" style="width: 160px; height: 160px;">
+            <p>西门子（SIEMENS）西班牙原装进口 双重烘干...</p>
+            <span>￥6199.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like11.png" alt="" style="width: 160px; height: 160px;">
+            <p>老板（Robam） JZT-37B6A燃气灶 4.5kW嵌...</p>
+            <span>￥1499.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like12.png" alt="" style="width: 160px; height: 160px;">
+            <p>火星人 marssenger T7BC 集成灶蒸烤...</p>
+            <span>￥16980.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like13.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔 (Haier ) 218升无霜三门冰箱...</p>
+            <span>￥2099.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like14.png" alt="" style="width: 160px; height: 160px;">
+            <p>海信（Hisense）65E3F 65英寸 4K超高清...</p>
+            <span>￥3299.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like15.png" alt="" style="width: 160px; height: 160px;">
+            <p>海信（Hisense）75E3F 75英寸 4K HDR...</p>
+            <span>￥4599.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like16.png" alt="" style="width: 160px; height: 160px;">
+            <p>【云鲸官方旗舰｜12期免息】云鲸一代小白鲸扫...</p>
+            <span>￥4299.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like17.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔 （Haier ）480升风冷无霜变频对开门冰箱...</p>
+            <span>￥2999.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like18.png" alt="" style="width: 160px; height: 160px;">
+            <p>华为智慧屏 SE 55英寸 畅连通话版 超薄电视 4K...</p>
+            <span>￥2699.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like19.png" alt="" style="width: 160px; height: 160px;">
+            <p>小天鹅(LittleSwan)浣彩系列 京品家电 10公斤洗...</p>
+            <span>￥3099.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like20.png" alt="" style="width: 160px; height: 160px;">
+            <p>老板（Robam）抽油烟机 烟灶套装免拆洗静音侧...</p>
+            <span>￥4899.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like21.png" alt="" style="width: 160px; height: 160px;">
+            <p>科沃斯 Ecovacs 地宝T9 Power扫地机器人dToF...</p>
+            <span>￥3599.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like22.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔（Haier）3匹 变频立式客厅空调柜机 致樽...</p>
+            <span>￥7799.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like23.png" alt="" style="width: 160px; height: 160px;">
+            <p>苏泊尔（SUPOR）低辐射家用电磁炉套装...</p>
+            <span>￥299.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like24.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔 （Haier）178升两门双门直冷冰箱...</p>
+            <span>￥1199.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like25.png" alt="" style="width: 160px; height: 160px;">
+            <p>海信电视 42E2F 42英寸全高清8G智慧屏...</p>
+            <span>￥1199.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like26.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔（Haier)滚筒洗衣机全自动BLDC变频电机...</p>
+            <span>￥2839.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like27.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔（Haier）472升变频一级能效十字双开门四...</p>
+            <span>￥5599.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like28.png" alt="" style="width: 160px; height: 160px;">
+            <p>小米电视6 至尊版 75英寸 4K QLED 百级分区背光...</p>
+            <span>￥9999.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like29.png" alt="" style="width: 160px; height: 160px;">
+            <p>海尔 （Haier）218升风冷无霜三门冰箱干湿分储...</p>
+            <span>￥2399.00</span>
+        </div>
+        <div class="goods_items">
+            <img src="upload/like30.png" alt="" style="width: 160px; height: 160px;">
+            <p>美的 （Midea）京品家电 滚筒洗衣机全自动 10K...</p>
+            <span>￥2199.00</span>
+        </div>
+
+    </div>
+    <!-- footer start -->
+    <div class="footer">
+        <div class="w">
+            <!-- mod_service -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <i class="mod-service-icon mod_service_zheng"></i>
+                        <div class="mod_service_tit">
+                            <h5>正品保障</h5>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_kuai"></i>
+                        <div class="mod_service_tit">
+                            <h5>极速物流</h5>
+                            <p>急速物流，急速送达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_bao"></i>
+                        <div class="mod_service_tit">
+                            <h5>无忧售后</h5>
+                            <p>7天无理由退换货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_te"></i>
+                        <div class="mod_service_tit">
+                            <h5>特色服务</h5>
+                            <p>私人定制家电套餐</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_bang"></i>
+                        <div class="mod_service_tit">
+                            <h5>帮助中心</h5>
+                            <p>您的购物指南</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mod_help -->
+            <div class="mod_help">
+                <dl class="mod_help_item">
+                    <dt>购物指南</dt>
+                    <dd> <a href="#">购物流程 </a></dd>
+                    <dd> <a href="#">会员介绍 </a></dd>
+                    <dd> <a href="#">生活旅行/团购 </a></dd>
+                    <dd> <a href="#">常见问题 </a></dd>
+                    <dd> <a href="#">大家电 </a></dd>
+                    <dd> <a href="#">联系客服 </a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">211限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">海外配送</a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">分期付款</a></dd>
+                    <dd><a href="#">邮局汇款</a></dd>
+                    <dd><a href="#">公司转账</a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">返修/退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>特色服务</dt>
+                    <dd><a href="#">夺宝岛</a></dd>
+                    <dd><a href="#">DIY装机</a></dd>
+                    <dd><a href="#">延保服务</a></dd>
+                    <dd><a href="#">品优购E卡</a></dd>
+                    <dd><a href="#">品优购通信</a></dd>
+                </dl>
+                <dl class="mod_help_item mod_help_app">
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <img src="upload/erweima.png" alt="">
+                        <p>品优购客户端</p>
+                    </dd>
+                </dl>
+            </div>
+
+            <!-- mod_copyright  -->
+            <div class="mod_copyright">
+                <p class="mod_copyright_links">
+                    关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 | English Site | Contact U
+                </p>
+                <p class="mod_copyright_info">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
+                    京ICP备08001421号京公网安备110108007702
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+</body>
+
+</html>
